@@ -25,7 +25,7 @@ public class LanguageAnalysis1
 				
 		
 		Parser parser = new AutoDetectParser();
-	    BodyContentHandler handler = new BodyContentHandler();
+	    BodyContentHandler handler = new BodyContentHandler(-1);
 	    Metadata metadata = new Metadata();
 		LanguageIdentifier object = new LanguageIdentifier(handler.toString());
 		String filePath = FilePath.replace("\\", "\\\\");
