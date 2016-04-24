@@ -10,5 +10,8 @@ DIST_SYMBOL=(\d{1,5}\.?\d{0,}[\s]?(cm|m|km|ft))[\s]
 SPEED_STRING=(\d{1,5}\.?\d{0,}[\s]?((metres|kilometres|miles|feet)[\s]per[\s](hour|minute|second)))
 SPEED_SYMBOL=(\d{1,5}\.?\d{0,}[\s]?((m|km|ft)([\/]|p)(s|h|min)))
 DUM_MEASUREMENT=(\d{1,}[\s][A-z]{1,}[\s][A-z]{1,})
-POWER_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(kilowatt|kilowatts|kW)$))
+POWER_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(kilowatt|kilowatts|kW|watt|watts|W)$))
+CURRENT_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(ampere|amperes|A|amps|amp)$)
+VOLT_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(volt|volts|V)$))
+KELVIN_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(kelvin|k|deg.kelvin|deg.k)$))
 
