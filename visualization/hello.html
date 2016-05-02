@@ -76,12 +76,28 @@
                 <iframe src="http://cs-server.usc.edu:46737/dashboard_language.html" class="nob"  style="margin-top:-62px"> </iframe>
             </div>
             <div id="word_cloud" class="tab-pane fade">
-                <iframe src="" class="nob"> </iframe>
-            </div>
+               <ul class="nav nav-pills nav-justified">
+  <li class="active"><a data-toggle="pill" href="#cloud1">Word Cloud-text</a></li>
+  <li><a data-toggle="pill" href="#cloud2">Word Cloud-Metadata</a></li>
+  <li><a data-toggle="pill" href="#cloud3">Word Cloud-Languages</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="cloud1" class="tab-pane fade in active" style="margin-left: 150px; margin-top: 80px">
+    <iframe src="http://cs-server.usc.edu:46737/wordcloud.html" class="nob"  style="margin-top:-62px"> </iframe>
+  </div>
+  <div id="cloud2" class="tab-pane fade" style="margin-left: 150px; margin-top: 80px">
+    <iframe src="http://cs-server.usc.edu:46737/wordcloudmetadata.html" class="nob"  style="margin-top:-62px"> </iframe>
+  </div>
+  <div id="cloud3" class="tab-pane fade" style="margin-left: 150px; margin-top: 80px">
+    <iframe src="http://cs-server.usc.edu:46737/wordcloudmetadata.html" class="nob"  style="margin-top:-62px"> </iframe>
+  </div>
+</div>
             <div id="spectrum" class="tab-pane fade">
                 <iframe src="http://cs-server.usc.edu:46737/new.html" class="nob"></iframe>
             </div>
-        </div>
+
+</div>        </div>
     </div>
 </body>
 
