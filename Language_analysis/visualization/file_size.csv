@@ -1,0 +1,23 @@
+mime-type,0 to 0.25,0.25 to 0.5,0.50 to 0.75,0.75 to 1
+application/mp4,158,200,137,12
+application_msword,75,310,137,23
+application_octet-stream,138,22,154,2
+application_pdf,7600,987,62,6
+application/rss+xml,2514,1267,1109,26
+application/xhtml+xml,5612,4241,47,13
+application/xml,3455,904,41,9
+audio/mpeg,129,167,189,6
+image/gif,6753,761,201,1576
+image/jpeg,7890,392,81,36
+image/png,8961,377,93,17
+text/plain,9102,3321,293,32
+video/mp4,122,431,103,67
+video/quicktime,7,2,67,103
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,

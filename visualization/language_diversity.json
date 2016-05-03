@@ -2,14 +2,14 @@
     
     {
     "freq": {
-      "application/mp4": 0,
+      "application/mp4": 350,
       "application/msword": 333,
-      "application/octet-stream": 18,
-      "application/pdf": 4,
+      "application/octet-stream": 180,
+      "application/pdf": 490,
       "application/rss+xml": 2378,
       "application/xhtml+xml": 1209,
       "application/xml": 502,
-      "audio/mpeg": 1,
+      "audio/mpeg": 103,
       "image/gif": 18,
       "image/jpeg": 1,
       "image/png": 1,
@@ -260,7 +260,7 @@
       "video/mp4": 169,
       "video/quicktime": 36
     },
-    "State": "hu"
+    "State": "en"
   },
   {
     "freq": {

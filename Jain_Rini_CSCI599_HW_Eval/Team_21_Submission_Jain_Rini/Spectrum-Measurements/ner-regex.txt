@@ -1,0 +1,17 @@
+TEMP_SYMBOL=(\d{1,3}\.?\d{0,}[\s]?((d|D)(egree|eg|egrees)))
+TEMP_STRING=(\d{1,3}\.?\d{0,}?(°C|°F))
+PRES_STRING=(\d{1,3}\.?\d{0,}[\s]?(bars|kilopascals|pascals))
+PRES_SYMBOL=(\d{1,3}\.?\d{0,}[\s]?(b|kPa|Pa))
+WGHT_STRING=(\d{1,3}\.?\d{0,}[\s]?((kilo|milli)?gram))
+WGHT_SYMBOL=(\d{1,3}\.?\d{0,}[\s]?(gm|kg|mg))
+HEAT_STRING=(\d{1,5}\.?\d{0,}[\s]?(Btu|kcal|cal|Joule|J|((c|C)(alorie))))
+DIST_STRING=(\d{1,5}\.?\d{0,}[\s]?(centimeters|metres|kilometres|miles|feet))
+DIST_SYMBOL=(\d{1,5}\.?\d{0,}[\s]?(cm|m|km|ft))[\s]
+SPEED_STRING=(\d{1,5}\.?\d{0,}[\s]?((metres|kilometres|miles|feet)[\s]per[\s](hour|minute|second)))
+SPEED_SYMBOL=(\d{1,5}\.?\d{0,}[\s]?((m|km|ft)([\/]|p)(s|h|min)))
+DUM_MEASUREMENT=(\d{1,}[\s][A-z]{1,}[\s][A-z]{1,})
+POWER_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(kilowatt|kilowatts|kW|watt|watts|W)$))
+CURRENT_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(ampere|amperes|A|amps|amp)$)
+VOLT_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(volt|volts|V)$))
+KELVIN_SYMBOL=((?i)\d(^-?[0-9]+\d(.[0-9]+)?\s*(kelvin|k|deg.kelvin|deg.k)$))
+

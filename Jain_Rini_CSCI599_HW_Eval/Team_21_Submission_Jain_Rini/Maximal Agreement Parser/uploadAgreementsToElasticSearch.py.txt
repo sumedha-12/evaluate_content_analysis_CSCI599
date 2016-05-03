@@ -1,0 +1,24 @@
+import requests
+import json
+
+with open('comparedResults.json') as jsonfile:
+    json_data = json.load(jsonfile)
+
+filename = json_data['filename']
+url = "http://localhost:9200/finaldataset/metadata"
+for json_raw in json_data:
+    terms = []
+    metaData = {}
+    with open('terms.txt') as f:
+        for line in f:
+            line = line.rstrip('\r\n').lower()
+            terms.append(line)
+    metadata[filename] = terms
+    res = requests.post(url, data=json.dumps(metaData))
+    print res
+jsonfile.close()
+
+
+
+
+

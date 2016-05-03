@@ -1,0 +1,34 @@
+group	date	value
+1	hello	17
+1	hi	3
+1	bye	7
+1	bye	15
+1	what	1
+2	what	9
+2	can 	0
+2	I say	5
+2	hello	22
+2	bye	19
+3	what	9
+3	can 	4
+3	I say	12
+3	hello	5
+3	bye	3
+3	bye	10
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
