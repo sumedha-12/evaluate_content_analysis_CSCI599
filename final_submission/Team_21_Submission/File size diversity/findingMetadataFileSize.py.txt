@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+import tika
+from tika import language
+import cbor
+import os
+import json
+import re
+import httplib
+import urllib
+import unicodedata
+from tika import parser
+
+tika.initVM()
+
+path = "/home/vinds/Kukku/sorteddata/crawl/test"
+
+def get_filepaths(directory):
+    json_file = open("output.json", "w")
+    finaloutput = {}
+    for root, directories, files in os.walk(directory):
+        for filename in files:
+	    print filename
+	    metaJSON = {}
+            filepath = os.path.join(root, filename)
+	    #------------------File Size------------------------
+	    filesize = os.stat(filepath).st_size
+#	    print filepath
+
+	    #------------------Tika MetaData and Content--------
+	    try:
+	        parsed = parser.from_file(filepath)
+    	        metadata = parsed["metadata"]
+    	        content = parsed["content"]
+		parsedBy = metadata["X-Parsed-By"]
+	    except:
+		continue
+	    if content is None:
+		#print "Content size: 0"
+		content =""
+		metaJSON["content"] = 0
+  	        metaJSON["content/file_size"] = 0
+	    else:
+       	        #print "Content size: " + str(len(content))
+     	        metaJSON["content"] = len(content)
+  	        metaJSON["content/filesize"] = len(content)/float(filesize)
+	    TextLang = language.from_buffer(content)
+	    metaJSON["metadata/filesize"] = len(metadata)/float(filesize)
+	    metaJSON["filepath"] = filepath		    
+	    metaJSON["filesize"] = filesize
+	    metaJSON["metadata"] = len(metadata)
+	    metaJSON["contentLang"] = TextLang
+	    metaJSON["parsers"] = parsedBy
+	    finaloutput[filename] = metaJSON
+    json.dump(finaloutput, json_file, indent=2)    	  
+    json_file.close()
+
+#calling the function
+get_filepaths(path)

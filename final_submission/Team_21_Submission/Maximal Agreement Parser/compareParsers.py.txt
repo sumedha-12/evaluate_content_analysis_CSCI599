@@ -1,0 +1,94 @@
+import json
+import os
+
+jsonFile = 'sample.json'
+folder = '/home/vinds/Desktop/test'
+
+def commonData(filename):
+    commonDataSet = set()
+    opnNLPset = set()
+    coreNLPset = set()
+    nltkSet = set()
+    config = json.loads(open(jsonFile).read())
+    #filename = 'china'
+    if filename in config:
+    #---------------openNLP set------------------------------
+        tmp = config[filename]["openNLPdata"]["NER_PERSON"]
+        opnNLPset = set(tmp)
+        tmp = config[filename]["openNLPdata"]["NER_MONEY"]
+    	for item in tmp:
+            opnNLPset.add(item)
+    	tmp = config[filename]["openNLPdata"]["NER_LOCATION"]
+    	for item in tmp:
+            opnNLPset.add(item)
+        tmp = config[filename]["openNLPdata"]["NER_DATE"]
+	for item in tmp:
+            opnNLPset.add(item)
+        tmp = config[filename]["openNLPdata"]["NER_ORGANIZATION"]
+        for item in tmp:
+            opnNLPset.add(item)
+        tmp = config[filename]["openNLPdata"]["NER_PERCENT"]
+        for item in tmp:
+            opnNLPset.add(item)
+        tmp = config[filename]["openNLPdata"]["NER_TIME"]
+        for item in tmp:
+            opnNLPset.add(item)
+        #print opnNLPset
+        #print len(opnNLPset)
+
+#---------------coreNLP set------------------------------
+        tmp = config[filename]["coreNLPdata"]["NER_PERSON"]
+        coreNLPset = set(tmp)
+        tmp = config[filename]["coreNLPdata"]["NER_MONEY"]
+        for item in tmp:
+            coreNLPset.add(item)
+        tmp = config[filename]["coreNLPdata"]["NER_LOCATION"]
+        for item in tmp:
+            coreNLPset.add(item)
+        tmp = config[filename]["coreNLPdata"]["NER_DATE"]
+        for item in tmp:
+            coreNLPset.add(item)
+        tmp = config[filename]["coreNLPdata"]["NER_ORGANIZATION"]
+        for item in tmp:
+            coreNLPset.add(item)
+        tmp = config[filename]["coreNLPdata"]["NER_PERCENT"]
+        for item in tmp:
+            coreNLPset.add(item)
+        tmp = config[filename]["coreNLPdata"]["NER_TIME"]
+        for item in tmp:
+            coreNLPset.add(item)
+            #print coreNLPset	
+        #print len(coreNLPset)
+
+#---------------NLTK set------------------------------
+        tmp = config[filename]["NLTKmetadata"]	
+        nltkSet = set(tmp)
+        #print len(nltkSet)
+
+        commonDataSet = set.intersection(opnNLPset,coreNLPset,nltkSet)
+        #print len(commonDataSet)
+    return commonDataSet, len(opnNLPset), len(coreNLPset), len(nltkSet)
+
+def saveCommonData(filename, data):
+    fo = open("common.txt", "a")
+    fo.write(filename+" : ")
+    for item in data:
+        fo.write(item+" , ")
+    fo.close()
+
+finaloutput = {}
+for root, directories, files in os.walk(folder):
+        for filename in files:
+	    print filename
+	    countJSON = {}
+	    filepath = os.path.join(root, filename)
+	    commonDS, opnNLPcount, coreNLPcount, nltkCount = commonData(filename)
+	    print opnNLPcount
+	    countJSON['opnNLPcount'] = opnNLPcount
+	    countJSON['coreNLPcount'] = coreNLPcount
+	    countJSON['nltkCount'] = nltkCount
+	    countJSON['commonCount'] = len(commonDS)
+	    finaloutput[filename] = countJSON
+	    #saveCommonData(filename,commonDS)
+print finaloutput
+

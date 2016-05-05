@@ -1,0 +1,396 @@
+{
+    "name": "nsfpolardata.dyndns.org",
+    "parent": "null",
+    "children": [
+      {
+        "name": "pubs.usgs.gov",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://pubs.usgs.gov/of/1996/of96-252/almap.pdf",
+            "parent": "pubs.usgs.gov",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/almap.pdf"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/almap.pdf"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/almap.pdf"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/almap.pdf"
+              },           
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/almap.pdf"
+              }
+            ]
+          },
+          {
+            "name": "http://pubs.usgs.gov/of/1996/of96-252/camap.pdf",
+            "parent": "pubs.usgs.gov",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/camap.pdf"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/camap.pdf"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/camap.pdf"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/camap.pdf"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/camap.pdf"
+              }
+            ]
+          },
+          {
+            "name": "http://pubs.usgs.gov/of/1996/of96-252/txmap.pdf",
+            "parent": "pubs.usgs.gov",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/txmap.pdf"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/txmap.pdf"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/txmap.pdf"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://pubs.usgs.gov/of/1996/of96-252/txmap.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.aoos.org",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.aoos.org/america/slocalr",
+            "parent": "www.aoos.org",
+            "children": [
+              {
+                "name": "TIME",
+                "parent": "http://www.aoos.org/america/slocalr"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://www.aoos.org/america/slocalr"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.aoos.org/america/slocalr"
+              }
+            ]
+          },
+          {
+            "name": "http://www.aoos.org/weather/local/",
+            "parent": "www.aoos.org",
+            "children": [
+              {
+                "name": "MONEY",
+                "parent": "http://www.aoos.org/weather/local/"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.aoos.org/weather/local/"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://www.aoos.org/weather/local/"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.aoos.org/weather/local/"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://www.aoos.org/weather/local/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.gpo.gov",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.gpo.gov/fdsys/sf_geo",
+            "parent": "pubs.usgs.gov",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.gpo.gov/fdsys/sf_geo"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://www.gpo.gov/fdsys/sf_geo"
+              }
+            ]
+          },
+          {
+            "name": "http://www.gpo.gov/fdsys/la_geo",
+            "parent": "pubs.usgs.gov",
+            "children": [
+              {
+                "name": "MONEY",
+                "parent": "http://www.gpo.gov/fdsys/la_geo"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.gpo.gov/fdsys/la_geo"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://www.gpo.gov/fdsys/la_geo"
+              }
+            ]
+          },
+          {
+            "name": "http://www.gpo.gov/fdsys/ny_geo",
+            "parent": "pubs.usgs.gov",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.gpo.gov/fdsys/ny_geo"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.gpo.gov/fdsys/ny_geo"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.gpo.gov/fdsys/ny_geo"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.gpo.gov/fdsys/ny_geo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www1.ncdc.noaa.gov",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www1.ncdc.noaa.gov/research/Baker.pdf",
+            "parent": "www1.ncdc.noaa.gov",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www1.ncdc.noaa.gov/research/Baker.pdf"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www1.ncdc.noaa.gov/research/Baker.pdf"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://www1.ncdc.noaa.gov/research/Baker.pdf"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www1.ncdc.noaa.gov/research/Baker.pdf"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www1.ncdc.noaa.gov/research/Baker.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.nature.nps.gov",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "https://www.nature.nps.gov/air",
+            "parent": "www.nature.nps.gov",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "https://www.nature.nps.gov/air"
+              },
+              {
+                "name": "TIME",
+                "parent": "https://www.nature.nps.gov/air"
+              },
+              {
+                "name": "MONEY",
+                "parent": "https://www.nature.nps.gov/air"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "https://www.nature.nps.gov/air"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "https://www.nature.nps.gov/air"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "https://www.nature.nps.gov/air"
+              },
+              {
+                "name": "DATE",
+                "parent": "https://www.nature.nps.gov/air"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "g.co",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "air/pub/final/air/pub/finalair/pub/final",
+            "parent": "g.co",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "air/pub/final/air/pub/final"
+              },
+              {
+                "name": "TIME",
+                "parent": "air/pub/final/air/pub/final"
+              },
+              {
+                "name": "MONEY",
+                "parent": "air/pub/final/air/pub/final"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "air/pub/final/air/pub/final"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "weather.co",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://weather.co/weather/1016/battery",
+            "parent": "weather.co",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://weather.co/weather/1016/battery"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://weather.co/weather/1016/battery"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://weather.co/weather/1016/battery"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://weather.co/weather/1016/battery"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://weather.co/weather/1049/battery"
+              }
+            ]
+          },
+          {
+            "name": "http://weather.co/weather/1029/battery",
+            "parent": "weather.co",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://weather.co/weather/1029/battery"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://weather.co/weather/1029/battery"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://weather.co/weather/1029/battery"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://weather.co/weather/1029/battery"
+              }
+            ]
+          },
+          {
+            "name": "http://weather.co/weather/1047/battery_old",
+            "parent": "weather.co",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://weather.co/weather/1047/battery"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://weather.co/weather/1047/battery_old"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://weather.co/weather/1047/battery_old"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://weather.co/weather/1047/battery_old"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cpspolar.com",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://cpspolar.com/",
+            "parent": "cpspolar.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://cpspolar.com/"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
